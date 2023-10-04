@@ -1880,6 +1880,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFBF07\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 191 7 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2240,6 +2245,15 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFBF07\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 191 7 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .underline {
@@ -2659,6 +2673,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#FFBF07\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 191 7 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2671,6 +2690,11 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#FFBF07\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 191 7 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {

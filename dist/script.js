@@ -34,3 +34,5 @@ function sendWhatsAppMessage() {
 
   document.getElementById("show").textContent="Thanks you for enrolling us 💖"
 }
+
+AOS.init();

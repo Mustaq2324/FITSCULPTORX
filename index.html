@@ -17,14 +17,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body class="bg-black">
+  <body class="bg-black overflow-x-hidden">
     <!-- navbar -->
-    <div
-      style="background-image: url(./img/hero-1.jpg)"
-      class="bg-cover bg-center h-[650px]"
+    <div    style="background-image: url(./img/hero-1.jpg)" class="bg-cover bg-center h-[650px]" 
     >
-      <div class="flex items-center justify-between p-4">
+      <div   class="flex items-center justify-between  p-4">
         <h1
           class="font-['Oswald',sans-serif] text-4xl flex items-center gap-1 text-white"
         >
@@ -35,21 +34,21 @@
           <ul class="flex gap-4 text-xl">
             <li><a href="" class="text-[#FFC001] hover:text-white">Home</a></li>
             <li>
-              <a href="" class="text-white hover:text-[#FFC001]">About</a>
+              <a href="#about" class="text-white hover:text-[#FFC001]">About</a>
             </li>
             <li>
-              <a href="" class="text-white hover:text-[#FFC001]">Services</a>
+              <a href="#services" class="text-white hover:text-[#FFC001]">Services</a>
             </li>
             <li>
-              <a href="" class="text-white hover:text-[#FFC001]">Membership</a>
+              <a href="#membership" class="text-white hover:text-[#FFC001]">Membership</a>
             </li>
             <li>
-              <a href="" class="text-white hover:text-[#FFC001]">Contact</a>
+              <a href="#contact" class="text-white hover:text-[#FFC001]">Contact</a>
             </li>
           </ul>
         </div>
         <!-- side bar -->
-        <div class="lg:hidden flex items-center cursor-pointer " id="bars">
+        <div class="lg:hidden flex items-center cursor-pointer  " id="bars">
           <i class="fa-solid fa-bars text-[#FFC001] text-3xl"></i>
         </div>
       </div>
@@ -58,7 +57,8 @@
       <div
         class="h-full w-1/2 bg-black absolute top-0 -left-[100%] transition-all duration-1000 lg:hidden z-50"
         id="sidenav"
-      >
+      > 
+     
         <h1
           class="font-['Oswald',sans-serif] text-2xl flex items-center gap-1 text-white mt-6 justify-center"
         >
@@ -68,22 +68,22 @@
           <ul class="flex flex-col gap-4 mt-6 items-center">
             <li><a href="" class="text-[#FFC001] hover:text-white">Home</a></li>
             <li>
-              <a href="" class="text-white hover:text-[#FFC001]">About</a>
+              <a href="#about" class="text-white hover:text-[#FFC001]">About</a>
             </li>
             <li>
-              <a href="" class="text-white hover:text-[#FFC001]">Services</a>
+              <a href="#services" class="text-white hover:text-[#FFC001]">Services</a>
             </li>
             <li>
-              <a href="" class="text-white hover:text-[#FFC001]">Membership</a>
+              <a href="#membership" class="text-white hover:text-[#FFC001]">Membership</a>
             </li>
             <li>
-              <a href="" class="text-white hover:text-[#FFC001]">Contact</a>
+              <a href="contact" class="text-white hover:text-[#FFC001]">Contact</a>
             </li>
           </ul>
         </div>
       </div>
       <!-- hero -->
-      <div
+      <div  data-aos="fade-up"   data-aos-duration="800" 
         class="text-white flex flex-col w-full h-full justify-center items-center"
       >
         <h2 class="font-['Mulish', sans-serif] text-xl">SHAPE YOUR BODY</h2>
@@ -111,8 +111,8 @@
 
     <div class="bg-black">
       <div class="flex flex-col lg:flex-row mb-4">
-        <div class="flex justify-center items-center flex-col gap-3 mt-20">
-          <img src="../img/cat1.png" class="transform hover:scale-105 transition-transform duration-300" alt="" />
+        <div data-aos="zoom-in-up" data-aos-delay="100"   data-aos-duration="900" class="flex justify-center items-center flex-col gap-3 mt-20">
+          <img  src="./img/cat1.png" class="transform hover:scale-105 transition-transform duration-300" alt="" />
           <h1 class="text-white font-[oswald] text-3xl lg:text-4xl">
             PERSONAL TRANING
           </h1>
@@ -131,7 +131,7 @@
             </button>
           </div>
         </div>
-        <div class="flex justify-center items-center flex-col gap-3 mt-20">
+        <div data-aos="zoom-in-up" data-aos-delay="100"   data-aos-duration="900" class="flex justify-center items-center flex-col gap-3 mt-20">
           <img src="./img/cat2.png" class="transform hover:scale-105 transition-transform duration-300" alt="" />
           <h1 class="text-white font-[oswald] text-3xl lg:text-4xl">
             GROUP TRANING
@@ -155,7 +155,7 @@
       </div>
     </div>
     <!-- offer -->
-    <div class="bg-[#151515]">
+    <div class="bg-[#151515]" id="services">
       <h1
         class="text-white pt-20 font-['Oswald', sans-serif] text-4xl font-bold text-center"
       >
@@ -166,13 +166,13 @@
         class="flex flex-col md:items-center lg:flex-row lg:justify-around container px-4 mx-auto mt-20"
       >
         <div>
-          <img
+          <img  data-aos="fade-right"   data-aos-duration="800"
             src="./img/gallery6.png"
             class="w-[500px] object-contain transform hover:scale-105 transition-transform duration-300"
             alt=""
           />
         </div>
-        <div class="flex flex-col gap-5 justify-center mt-10 lg:mt-0">
+        <div data-aos-delay="300" data-aos="fade-left"   data-aos-duration="900" class="flex flex-col gap-5 justify-center mt-10 lg:mt-0">
           <h1
             class="font-['Oswald', sans-serif] text-3xl font-bold text-[#FFC001]"
           >
@@ -200,7 +200,7 @@
       <div
         class="flex flex-col-reverse md:items-center lg:flex-row lg:justify-around container px-4 mx-auto mt-16"
       >
-        <div class="flex flex-col gap-5 justify-center mt-10 lg:mt-0">
+        <div  data-aos="fade-right"   data-aos-duration="800" class="flex flex-col gap-5 justify-center mt-10 lg:mt-0">
           <h1
             class="font-['Oswald', sans-serif] text-3xl font-bold text-[#FFC001]"
           >
@@ -225,7 +225,7 @@
             </button>
           </div>
         </div>
-        <div>
+        <div data-aos-delay="300" data-aos="fade-left"   data-aos-duration="900">
           <img
             src="./img/gallery4.png"
             class="lg:h-[480px] w-[500px] object-contain transform hover:scale-105 transition-transform duration-300"
@@ -237,14 +237,14 @@
       <div
         class="flex flex-col md:items-center lg:flex-row lg:justify-around container px-4 mx-auto mt-16"
       >
-        <div>
+        <div data-aos="fade-right"   data-aos-duration="800" >
           <img
             src="./img/services.jpg"
             class="w-[500px] text-center object-contain transform hover:scale-105 transition-transform duration-300"
             alt=""
           />
         </div>
-        <div class="flex flex-col gap-5 lg:gap-3 justify-center mt-10 lg:mt-0">
+        <div data-aos-delay="300" data-aos="fade-left"   data-aos-duration="900" class="flex flex-col gap-5 lg:gap-3 justify-center mt-10 lg:mt-0">
           <h1
             class="font-['Oswald', sans-serif] text-3xl font-bold text-[#FFC001]"
           >
@@ -272,7 +272,7 @@
       <div
         class="flex flex-col-reverse md:items-center lg:flex-row lg:justify-around container px-4 mx-auto pb-6 mt-16"
       >
-        <div class="flex flex-col gap-5 lg:gap-3 justify-center mt-10 lg:mt-0">
+        <div data-aos="fade-right"   data-aos-duration="800" class="flex flex-col gap-5 lg:gap-3 justify-center mt-10 lg:mt-0">
           <h1
             class="font-['Oswald', sans-serif] text-3xl font-bold text-[#FFC001] lg:w-[500px]"
           >
@@ -295,7 +295,7 @@
             </button>
           </div>
         </div>
-        <div>
+        <div data-aos-delay="300" data-aos="fade-left"   data-aos-duration="900">
           <img
             src="./img/gallery-3.jpg"
             class="lg:h-[450px] w-[500px] object-contain transform hover:scale-105 transition-transform duration-300"
@@ -306,8 +306,8 @@
     </div>
     <!-- offer ends -->
     <!-- meet your trainer -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 mt-10 place-items-center  mx-auto px-4 ">
-      <div class="flex flex-col gap-8">
+    <div id="about" class="grid grid-cols-1 lg:grid-cols-2 mt-10 place-items-center  mx-auto px-4 ">
+      <div data-aos="flip-up"   data-aos-duration="800" class="flex flex-col gap-8">
 
           <h2 class="text-4xl   font-extrabold text-yellow-500 font-[oswald] ">MEET YOUR TRAINER</h2>
       
@@ -320,7 +320,7 @@
           </div>
       </div>
       
-         <div>
+         <div data-aos="flip-down"   data-aos-duration="800">
           <img src="./img/hero.jpg" alt="" class="rounded-xl " style="height: 600px; object-fit:cover ;" >
          </div>
          
@@ -329,19 +329,19 @@
    
 <!-- Member ship -->
 
-<div class="py-12 mt-20">
+<div id="membership" class="py-12 mt-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
           <h2 class="text-4xl lg:text-5xl font-extrabold text-yellow-500 font-[oswald]">Choose a Membership Plan</h2>
           <p class="mt-3 text-xl text-white">Get started with the perfect plan that suits your fitness goals.</p>
       </div>
       </div>
-      <div class=" mt-10 flex justify-around items-center flex-col lg:flex-row">
+      <div  class=" mt-10 flex justify-around items-center flex-col lg:flex-row">
         
         <div>
           <h1 class="text-[#FFC001] text-3xl font-[oswald] text-center mt-10 font-bold">GUIDANCE</h1>
           <div class="flex gap-4 lg:flex-row flex-col items-center justify-center lg:justify-start ">
-            <div class="mt-10 border-2 border-[#EDCC36] px-8 py-4 flex flex-col gap-4 rounded-xl ">
+            <div data-aos="fade-down" data-aos-duration="800" class="mt-10 border-2 border-[#EDCC36] px-8 py-4 flex flex-col gap-4 rounded-xl ">
               <div class="bg-[#FFC001] h-14 w-14 rounded-full flex justify-center items-center ">
                 <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
               </div>
@@ -359,11 +359,11 @@
                   <span class="text-white font-bold text-3xl"><i class="fa-solid fa-indian-rupee-sign text-2xl "></i>1999</span>
               </div>
                   <div>
-                    <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FFC001] hover:scale-[1.1] transition-all duration-1000">CHOOSE NOW</button>
+                    <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FFC001] hover:scale-[1.1] transition-all duration-1000"><a href="#form">CHOOSE NOW</a></button>
               </div>
               </div>
   
-              <div class="mt-10 border-2 border-[#EDCC36] px-8 py-4 flex flex-col gap-4 rounded-xl">
+              <div data-aos="fade-down" data-aos-duration="800" class="mt-10 border-2 border-[#EDCC36] px-8 py-4 flex flex-col gap-4 rounded-xl">
                 <div class="bg-[#FFC001] h-14 w-14 rounded-full flex justify-center items-center">
                   <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
                 </div>
@@ -386,7 +386,7 @@
                 </div>
                 </div>
   
-                <div class="mt-10 border-2 border-[#EDCC36] px-8 py-4 flex flex-col gap-4 rounded-xl">
+                <div data-aos="fade-down" data-aos-duration="800" class="mt-10 border-2 border-[#EDCC36] px-8 py-4 flex flex-col gap-4 rounded-xl">
                   <div class="bg-[#FFC001] h-14 w-14 rounded-full flex justify-center items-center">
                     <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
                   </div>
@@ -405,13 +405,13 @@
                   </div>
                      
                       <div>
-                        <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FFC001] hover:scale-[1.1] transition-all duration-1000">CHOOSE NOW</button>
+                        <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FFC001] hover:scale-[1.1] transition-all duration-1000"><a href="#form">CHOOSE NOW</a></button>
                   </div>
                   </div>
           </div>
         </div>
 
-        <div>
+        <div data-aos="fade-down" data-aos-duration="800">
           <h1 class="text-[#FFC001] text-3xl font-[oswald] text-center mt-10 font-bold">PERSONAL</h1>
          <div class="flex">
           <div class="mt-10 border-2 border-[#EDCC36] px-6 py-4 flex flex-col gap-3 rounded-xl ">
@@ -434,7 +434,7 @@
             </div>
                 
                 <div>
-                  <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FFC001] hover:scale-[1.1] transition-all duration-1000">CHOOSE NOW</button>
+                  <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FFC001] hover:scale-[1.1] transition-all duration-1000"><a href="#form"><a href="#form">CHOOSE NOW</a></a></button>
             </div>
             </div>
          </div>
@@ -448,10 +448,10 @@
     <!-- form -->
     <div class="mt-10" id="form">   
       <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        <div class="py-8 lg:py-16">
+        <div  data-aos="fade-right" data-aos-duration="800" class="py-8 lg:py-16">
           <img src="./img/banner.jpg" alt="Banner Image" class="mx-auto max-h-full  rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" />
         </div>
-        <div class="py-8">
+        <div  data-aos="fade-left" data-aos-duration="1000" class="py-8">
           <h1 class="font-oswald text-4xl font-bold text-[#FFC001] text-center mb-6">ENROLLMENT FORM</h1>
           <form id="myForm">
             <div class="mb-4 text-xl">
@@ -510,7 +510,7 @@
     </div>
   <!-- footer -->
     <hr style="border: 1px solid #FFC001;">
-    <footer class="mt-8 mb-8">
+    <footer id="contact" class="mt-8 mb-8">
       <div class="flex flex-col lg:flex-row lg:justify-evenly  gap-8 items-center">
         <div>
           <h1
@@ -539,7 +539,7 @@
 
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/script.js" defer></script>
   </body>
 </html>

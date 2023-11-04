@@ -19,13 +19,14 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body class="bg-black ">
+  <body class="bg-black overflow-x-hidden ">
     
     <!-- navbar -->
+    
     <div    style="background-image: url(./img/hero-1.jpg)" class="bg-cover bg-center h-[650px]" 
     >
-      <div   class="flex items-center  justify-between  md:p-4">
-        <div class="flex">
+      <div   class="flex items-center p-6  md:p-4 fixed w-full  justify-between z-[95] " id="navbar">
+        <div class="flex ">
           <h1
           class="font-['Oswald',sans-serif] text-4xl flex items-center gap-1 text-white"
           >
@@ -51,19 +52,19 @@
           </ul>
         </div>
         <!-- side bar -->
-        <div class="lg:hidden flex items-center cursor-pointer  " id="bars">
+        <div class="lg:hidden flex items-center cursor-pointer " id="bars">
           <i class="fa-solid fa-bars text-[#FF0000] text-3xl"></i>
         </div>
       </div>
 
       <!-- sidenavbar -->
       <div
-        class="h-full w-1/2 bg-black absolute top-0 -left-[100%] transition-all duration-1000 lg:hidden z-50"
+        class="h-[700px] w-[250px] bg-black fixed -left-[100%] transition-all duration-1000 lg:hidden z-[95]"
         id="sidenav"
       > 
     
         <h1
-          class="font-['Oswald',sans-serif] text-2xl flex items-center gap-1 text-white mt-6 justify-center"
+          class="font-['Oswald',sans-serif] text-2xl flex items-center gap-1 z-[99] text-white mt-6 justify-center"
         >
           FIT <span class="text-[#FF0000]">CRAFTERX</span>
         </h1>
@@ -111,6 +112,9 @@
       <!-- hero -->
     </div>
     <!-- hero finish -->
+    <div class="bg-white h-[40px] w-[40px]  fixed z-[99] right-[20px] flex items-center scroll-to-top-button justify-center rounded-full cursor-pointer" id="scrollToTopButton">
+      <i class="fa-solid fa-arrow-up text-2xl  text-[#ff0000]"></i>
+    </div>
 
     <div class="bg-black">
       <div class="flex flex-col lg:flex-row mb-4">
@@ -344,178 +348,150 @@
           <p class="mt-3 text-xl text-white">Get started with the perfect plan that suits your fitness goals.</p>
       </div>
       </div>
-      <div  class=" mt-10 flex justify-around items-center flex-col lg:flex-row">
+     
         
-        <div>
-          <h1 class="text-[#FF0000] text-3xl font-[oswald] text-center mt-10 font-bold">GUIDANCE</h1>
-          <div class="flex gap-4 lg:flex-row flex-col items-center justify-center lg:justify-start ">
+      <div class="">
+        <h1 class="text-[#FF0000] text-3xl font-[oswald] text-center mt-10 font-bold">GUIDANCE</h1>
+        <div class="flex gap-4 lg:flex-row flex-col items-center justify-center lg:justify-evenly ">
+            <!-- Package 1 MONTH -->
             <div data-aos="fade-down" data-aos-duration="800" class="mt-10 border-2 border-[#FF0000] px-8 py-4 flex flex-col gap-4 rounded-xl ">
-              <div class="bg-[#FF0000] h-14 w-14 rounded-full flex justify-center items-center ">
-                <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
-              </div>
-              <h1 class="text-white text-2xl font-bold font-[oswald]">1 MONTH</h1> 
-                     <div>
-                <ul class="flex flex-col  gap-3">
-                  <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Daily Checking</li>
-                  <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Diet</li>
-                  <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Workout  Plan</li>
-                </ul>
-              </div>
-              <div class="flex gap-3" >
-
-                <span class="text-[#FF0000] line-through text-2xl"><i class="fa-solid fa-indian-rupee-sign"></i>3000</span>
-                  <span class="text-white font-bold text-3xl"><i class="fa-solid fa-indian-rupee-sign text-2xl "></i>1999</span>
-              </div>
-                  <div>
-                    <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"><a href="#form">CHOOSE NOW</a></button>
-              </div>
-              </div>
-  
-              <div data-aos="fade-down" data-aos-duration="800" class="mt-10 border-2 border-[#FF0000] px-8 py-4 flex flex-col gap-4 rounded-xl">
-                <div class="bg-[#FF0000] h-14 w-14 rounded-full flex justify-center items-center">
-                  <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
+                <div class="bg-[#FF0000] h-14 w-14 rounded-full flex justify-center items-center ">
+                    <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
                 </div>
-                <h1 class="text-white text-2xl font-[oswald] font-bold">3 MONTHS</h1> 
-                       <div>
-                  <ul class="flex flex-col gap-3">
-                    <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Daily Checking</li>
-                    <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Diet</li>
-                    <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Workout Plan</li>
-                  </ul>
+                <h1 class="text-white text-2xl font-bold font-[oswald]">1 MONTH</h1>
+                <div>
+                    <ul class="flex flex-col gap-3">
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Daily Checking</li>
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Diet</li>
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Workout Plan</li>
+                    </ul>
                 </div>
-                <div class="flex gap-3" >
-
-                  <span class="text-[#FF0000] line-through text-2xl"><i class="fa-solid fa-indian-rupee-sign"></i>9000</span>
+                <div class="flex gap-3">
+                    <span class="text-[#FF0000] line-through text-2xl"><i class="fa-solid fa-indian-rupee-sign"></i>3000</span>
+                    <span class="text-white font-bold text-3xl"><i class="fa-solid fa-indian-rupee-sign text-2xl "></i>1999</span>
+                </div>
+                <div>
+                    <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000" 
+                           ><a href="#form">CHOOSE NOW</a></button>
+                </div>
+            </div>
+            <!-- Package 3 MONTH -->
+            <div data-aos="fade-down" data-aos-duration="800" class="mt-10 border-2 border-[#FF0000] px-8 py-4 flex flex-col gap-4 rounded-xl ">
+                <div class="bg-[#FF0000] h-14 w-14 rounded-full flex justify-center items-center ">
+                    <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
+                </div>
+                <h1 class="text-white text-2xl font-bold font-[oswald]">3 MONTHS</h1>
+                <div>
+                    <ul class="flex flex-col gap-3">
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Daily Checking</li>
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Diet</li>
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Workout Plan</li>
+                    </ul>
+                </div>
+                <div class="flex gap-3">
+                    <span class="text-[#FF0000] line-through text-2xl"><i class="fa-solid fa-indian-rupee-sign"></i>9000</span>
                     <span class="text-white font-bold text-3xl"><i class="fa-solid fa-indian-rupee-sign text-2xl "></i>4999</span>
                 </div>
-                   
-                    <div>
-                      <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000">CHOOSE NOW</button>
-                </div>
-                </div>
-  
-                <div data-aos="fade-down" data-aos-duration="800" class="mt-10 border-2 border-[#FF0000] px-8 py-4 flex flex-col gap-4 rounded-xl">
-                  <div class="bg-[#FF0000] h-14 w-14 rounded-full flex justify-center items-center">
-                    <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
-                  </div>
-                  <h1 class="text-white font-[oswald] text-2xl font-bold">6 MONTH</h1> 
-                         <div>
-                    <ul class="flex flex-col gap-3">
-                      <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Daily Checking</li>
-                      <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Diet</li>
-                      <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Workout Plan</li>
-                    </ul>
-                  </div>
-                  <div class="flex gap-3" >
-
-                    <span class="text-[#FF0000] line-through text-2xl"><i class="fa-solid fa-indian-rupee-sign"></i>18,000</span>
-                      <span class="text-white font-bold text-3xl"><i class="fa-solid fa-indian-rupee-sign text-2xl "></i>7999</span>
-                  </div>
-                     
-                      <div>
-                        <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"><a href="#form">CHOOSE NOW</a></button>
-                  </div>
-                  </div>
-          </div>
-        </div>
-
-        <div data-aos="fade-down" data-aos-duration="800">
-          <h1 class="text-[#FF0000] text-3xl font-[oswald] text-center mt-10 font-bold">PERSONAL</h1>
-         <div class="flex">
-          <div class="mt-10 border-2 border-[#FF0000] px-6 py-4 flex flex-col gap-3 rounded-xl ">
-            <div class="bg-[#FF0000] h-14 w-14 rounded-full flex justify-center items-center ">
-              <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
-            </div>
-            <h1 class="text-white text-2xl font-bold font-[oswald]">3 MONTHS</h1> 
-                   <div>
-              <ul class="flex flex-col  gap-3">
-                <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Live Video Session</li>
-                <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Daily Checking</li>
-                <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Diet  Plan</li>
-                <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Workout  Plan</li>
-              </ul>
-            </div>
-            <div class="flex gap-3" >
-
-              <span class="text-[#FF0000] line-through text-2xl"><i class="fa-solid fa-indian-rupee-sign"></i>30,000</span>
-                <span class="text-white font-bold text-3xl"><i class="fa-solid fa-indian-rupee-sign text-2xl "></i>19,999</span>
-            </div>
-                
                 <div>
-                  <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"><a href="#form"><a href="#form">CHOOSE NOW</a></a></button>
+                    <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000" 
+                           ><a href="#form">CHOOSE NOW</a></button>
+                </div>
             </div>
+            <!-- Package 6 MONTH -->
+            <div data-aos="fade-down" data-aos-duration="800" class="mt-10 border-2 border-[#FF0000] px-8 py-4 flex flex-col gap-4 rounded-xl ">
+                <div class="bg-[#FF0000] h-14 w-14 rounded-full flex justify-center items-center ">
+                    <i class="fa-solid fa-dumbbell text-black text-2xl"></i>
+                </div>
+                <h1 class="text-white text-2xl font-bold font-[oswald]">6 MONTHS</h1>
+                <div>
+                    <ul class="flex flex-col gap-3">
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Daily Checking</li>
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Diet</li>
+                        <li class="text-white"><i class="fa-regular fa-circle-check text-[#FF0000]"></i> Customized Workout Plan</li>
+                    </ul>
+                </div>
+                <div class="flex gap-3">
+                    <span class="text-[#FF0000] line-through text-2xl"><i class="fa-solid fa-indian-rupee-sign"></i>18000</span>
+                    <span class="text-white font-bold text-3xl"><i class="fa-solid fa-indian-rupee-sign text-2xl "></i>7999</span>
+                </div>
+                <div>
+                    <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000" 
+                           ><a href="#form">CHOOSE NOW</a></button>
+                </div>
             </div>
-         </div>
 
         </div>
-        </div>
-        
       </div>
+
+        
+      
+<div>   
+      </div>
+</div>
 </div>
 
     <!-- form -->
-    <div class="mt-10" id="form">   
+    <div class="mt-10" id="form">
       <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        <div  data-aos="zoom-in" data-aos-duration="800" class="py-8 lg:py-16">
-          <img src="./img/banner.jpg" alt="Banner Image" class="mx-auto max-h-full  rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div  data-aos="zoom-up" data-aos-duration="1000" class="py-8">
-          <h1 class="font-oswald text-4xl font-bold text-[#FF0000] text-center mb-6">ENROLLMENT FORM</h1>
-          <form id="myForm">
-            <div class="mb-4 text-xl">
-              <label for="name" class="text-white mb-2 block">Name</label>
-              <input type="text" placeholder="Enter Your Name" id="name" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-            </div>
-            <div class="mb-4 text-xl">
-              <label class="text-white mb-2 block">Gender</label>
-              <div class="flex items-center space-x-4 ">
-                <input type="radio" name="gender" id="male" value="male" class=" w-6 h-6"><label for="male" class="text-white mr-4 text-xl ">Male</label>
-                <input type="radio" name="gender" id="female" value="female" class=" w-6 h-6"><label for="female" class="text-white mr-4 text-xl">Female</label>
-              </div>
-            </div> 
-            <div class="mb-4 text-xl">
-              <label for="age" class="text-white mb-2 block">Age</label>
-              <input type="number" placeholder="Enter Your Age" id="age" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-            </div>
-            <div class="mb-4 text-xl flex items-center space-x-4">
-              <div class="w-1/2">
-                <label for="height" class="text-white mb-2 block">Height (in cm)</label>
-                <input type="number" placeholder="Enter Your Height" id="height" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105" inputmode="numeric">
-              </div>
-          
-              <div class="w-1/2">
-                <label for="weight" class="text-white mb-2 block">Weight (in kg)</label>
-                <input type="number" placeholder="Enter Your Weight" id="weight" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105" inputmode="numeric">
-              </div>
-            </div>
-          <div class="mb-4 text-xl">
-            <label for="goal" class="text-white mb-2 block">Goal</label>
-            <select id="goal" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-              <option value="">Select your Goal</option>
-              <option value="weight-loss">Weight Loss</option>
-              <option value="weight-gain">Weight Gain</option>
-              <option value="customized-diet-plan">Customized Diet Plan</option>
-              <option value="crossfit">Crossfit</option>
-              <option value="pcod">Special Training for PCOD</option>
-              <option value="personal-training">Personal Training</option>
-              <option value="group-training">Group Training</option>
-            </select>
-            </div>
-            <div class="mb-4 text-xl">
-              <label for="contact" class="text-white mb-2 block">Contact</label>
-              <input type="tel" placeholder="Enter Your Number" id="contact" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-            </div>
-            <div class="mb-4 text-xl">
-              <label for="mail" class="text-white mb-2 block">Email-Id</label>
-              <input type="email" placeholder="Enter Your Mail" id="mail" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-            </div>
-            <p id="show" class="text-center text-[#FF0000]  text-xl"></p>
-            <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 block mx-auto px-6 py-3 text-white bg-orange-500 hover:bg-orange-600 rounded-full transform hover:scale-105 transition duration-300">Submit</button>
-          </form>
-          
-        </div>
+          <div data-aos="zoom-in" data-aos-duration="800" class="py-8 lg:py-16">
+              <img src="./img/banner.jpg" alt="Banner Image" class="mx-auto max-h-full  rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div data-aos="zoom-up" data-aos-duration="1000" class="py-8">
+              <h1 class="font-oswald text-4xl font-bold text-[#FF0000] text-center mb-6">ENROLLMENT FORM</h1>
+              <form id="myForm">
+                  <div class="mb-4 text-xl">
+                      <label for="name" class="text-white mb-2 block">Name</label>
+                      <input type="text" placeholder="Enter Your Name" id="name" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                  </div>
+                  <div class="mb-4 text-xl">
+                      <label class="text-white mb-2 block">Gender</label>
+                      <div class="flex items-center space-x-4 ">
+                          <input type="radio" name="gender" id="male" value="male" class=" w-6 h-6"><label for="male" class="text-white mr-4 text-xl ">Male</label>
+                          <input type="radio" name="gender" id="female" value="female" class=" w-6 h-6"><label for="female" class="text-white mr-4 text-xl">Female</label>
+                      </div>
+                  </div>
+                  <div class="mb-4 text-xl">
+                      <label for="age" class="text-white mb-2 block">Age</label>
+                      <input type="number" placeholder="Enter Your Age" id="age" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                  </div>
+                  <div class="mb-4 text-xl flex items-center space-x-4">
+                      <div class="w-1/2">
+                          <label for="height" class="text-white mb-2 block">Height (in cm)</label>
+                          <input type="number" placeholder="Enter Your Height" id="height" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105" inputmode="numeric">
+                      </div>
+                      <div class="w-1/2">
+                          <label for="weight" class="text-white mb-2 block">Weight (in kg)</label>
+                          <input type="number" placeholder="Enter Your Weight" id="weight" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105" inputmode="numeric">
+                      </div>
+                  </div>
+                  <div class="mb-4 text-xl">
+                      <label for="goal" class="text-white mb-2 block">Goal</label>
+                      <select id="goal" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                          <option value="">Select your Goal</option>
+                          <option value="weight-loss">Weight Loss</option>
+                          <option value="weight-gain">Weight Gain</option>
+                          <option value="customized-diet-plan">Customized Diet Plan</option>
+                          <option value="crossfit">Crossfit</option>
+                          <option value="pcod">Special Training for PCOD</option>
+                          <option value="personal-training">Personal Training</option>
+                          <option value="group-training">Group Training</option>
+                      </select>
+                  </div>
+                  <div class="mb-4 text-xl">
+                      <label for="contact" class="text-white mb-2 block">Contact</label>
+                      <input type="tel" placeholder="Enter Your Number" id="contact" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                  </div>
+                  <div class="mb-4 text-xl">
+                      <label for="mail" class="text-white mb-2 block">Email-Id</label>
+                      <input type="email" placeholder="Enter Your Mail" id="mail" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                  </div>
+                  <p id="show" class="text-center text-[#FF0000] text-xl"></p>
+                  <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 block mx-auto px-6 py-3 text-white bg-orange-500 hover:bg-orange-600 rounded-full transform hover:scale-105 transition duration-300">Submit</button>
+              </form>
+          </div>
       </div>
-    </div>
+  </div>
+
   <!-- footer -->
     <hr style="border: 1px solid #FF0000;">
     <footer id="contact" class="mt-8 mb-8">
@@ -550,4 +526,4 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/script.js" defer></script>
   </body>
-</html>
+</html> 

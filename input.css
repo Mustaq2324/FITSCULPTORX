@@ -6,3 +6,17 @@
     transition-duration: 1000ms;
     left: 0;
   }
+  .bg-black-scroll {
+    background-color: black;
+  }
+/* Initially hide the button */
+.scroll-to-top-button {
+  display: none;
+  transition: opacity 0.3s;
+}
+
+/* Style the button */
+.scroll-to-top-button i {
+  cursor: pointer;
+}
+

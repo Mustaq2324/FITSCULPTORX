@@ -59,7 +59,7 @@
 
       <!-- sidenavbar -->
       <div
-        class="h-[700px] w-[250px] bg-black fixed -left-[100%] transition-all duration-1000 lg:hidden z-[95]"
+        class="h-full w-[250px] bg-black fixed -left-[100%] transition-all duration-1000 lg:hidden z-[95]"
         id="sidenav"
       > 
     
@@ -104,7 +104,7 @@
         <div>
           <button
             class="p-2 bg-[#FF0000] mt-6 hover:text-[#FF0000] hover:bg-black hover:scale-[1.1] transition-all duration-1000"
-          >
+          onclick="pop()">
             <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
           </button>
         </div>
@@ -112,12 +112,12 @@
       <!-- hero -->
     </div>
     <!-- hero finish -->
-    <div class="bg-white h-[40px] w-[40px]  fixed z-[99] right-[20px] flex items-center scroll-to-top-button justify-center rounded-full cursor-pointer" id="scrollToTopButton">
+    <div class="bg-white h-[40px] w-[40px]  fixed z-[99] right-[20px] bottom-[25px] flex items-center scroll-to-top-button justify-center rounded-full cursor-pointer" id="scrollToTopButton">
       <i class="fa-solid fa-arrow-up text-2xl  text-[#ff0000]"></i>
     </div>
 
     <div class="bg-black">
-      <div class="flex flex-col lg:flex-row mb-4">
+      <div class="flex flex-col lg:flex-row lg:mb-4">
 
         <div data-aos="zoom-in-up" data-aos-delay="100"   data-aos-duration="900" class="flex justify-center items-center flex-col gap-3 mt-20">
 
@@ -138,7 +138,7 @@
           <div>
             <button
               class="p-2 bg-[#FF0000] mt-1 hover:text-[#FF0000] hover:bg-white hover:scale-[1.1] transition-all duration-1000"
-            >
+              onclick="pop()" >
               <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
             </button>
           </div>
@@ -159,7 +159,7 @@
           <div>
             <button
               class="p-2 bg-[#FF0000] mt-1 hover:text-[#FF0000] hover:bg-white hover:scale-[1.1] transition-all duration-1000"
-            >
+              onclick="pop()"     >
               <i class="fa-solid fa-dumbbell"></i> <a href="#form"> Commit To Fit</a>
             </button>
           </div>
@@ -201,7 +201,7 @@
           </p>
           <div>
             <button
-              class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
+            onclick="pop()"       class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
             >
               <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
             </button>
@@ -232,7 +232,7 @@
           <div>
             <button
               class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
-            >
+              onclick="pop()"       >
               <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
             </button>
           </div>
@@ -274,7 +274,7 @@
           <div>
             <button
               class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
-            >
+              onclick="pop()"        >
               <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
             </button>
           </div>
@@ -301,7 +301,7 @@
           </p>
           <div>
             <button
-              class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
+            onclick="pop()"         class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
             >
               <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
             </button>
@@ -372,7 +372,7 @@
                 </div>
                 <div>
                     <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000" 
-                           ><a href="#form">CHOOSE NOW</a></button>
+                    onclick="pop()"                  ><a href="#form">CHOOSE NOW</a></button>
                 </div>
             </div>
             <!-- Package 3 MONTH -->
@@ -394,7 +394,7 @@
                 </div>
                 <div>
                     <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000" 
-                           ><a href="#form">CHOOSE NOW</a></button>
+                    onclick="pop()"              ><a href="#form">CHOOSE NOW</a></button>
                 </div>
             </div>
             <!-- Package 6 MONTH -->
@@ -416,7 +416,7 @@
                 </div>
                 <div>
                     <button class="p-2 bg-white mt-6 hover:text-white hover:bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000" 
-                           ><a href="#form">CHOOSE NOW</a></button>
+                    onclick="pop()"            ><a href="#form">CHOOSE NOW</a></button>
                 </div>
             </div>
 
@@ -431,66 +431,84 @@
 </div>
 
     <!-- form -->
-    <div class="mt-10" id="form">
-      <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div data-aos="zoom-in" data-aos-duration="800" class="py-8 lg:py-16">
-              <img src="./img/banner.jpg" alt="Banner Image" class="mx-auto max-h-full  rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300" />
+   <div class="w-[100vw] h-[100vh] bg-opacity-[0.7] z-[99] fixed -top-[150] left-0  bg-gradient-to-t from-black to-transparent bg-black" id="popup">
+    <div class=" bg-[#FF0000] bg-opacity-50 bg-gradient-to-t from-black to-transparent  md:w-[70%] w-full  rounded-lg mx-auto lg:translate-y-[15%]" id="form" >
+     
+      <div class="flex gap-2 ">
+          <div  class="hidden lg:block">
+              <img src="./img/banner.jpg" alt="Banner Image" class="object-contain w-[450px]   shadow-md " />
           </div>
-          <div data-aos="zoom-up" data-aos-duration="1000" class="py-8">
-              <h1 class="font-oswald text-4xl font-bold text-[#FF0000] text-center mb-6">ENROLLMENT FORM</h1>
-              <form id="myForm">
-                  <div class="mb-4 text-xl">
-                      <label for="name" class="text-white mb-2 block">Name</label>
+          <div  class="pe-2 mx-auto   ">
+           <div class="flex mt-2 lg:mt-0 justify-between items-center">
+            <h1 class="font-oswald text-3xl lg:text-4xl font-bold text-white text-center mt-2">ENROLLMENT FORM</h1>
+            <div class=" h-[30px] w-[30px] lg:h-[30px] cursor-pointer lg:w-[30px] rounded bg-black flex items-center justify-center  hover:bg-white hover:text-black text-white  " onclick="closepopup()">
+              <i class="fa-solid fa-xmark "></i>
+            </div>
+           </div>
+              <form id="myForm" class="lg:mt-5 p-1  ">
+                  <div class="flex flex-col lg:flex-row lg:gap-3">
+                    <div class="lg:mb-4 text-xl w-full lg:w-1/2">
+                      <label for="name" class="text-white lg:mb-2 block">Name</label>
                       <input type="text" placeholder="Enter Your Name" id="name" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
                   </div>
-                  <div class="mb-4 text-xl">
-                      <label class="text-white mb-2 block">Gender</label>
-                      <div class="flex items-center space-x-4 ">
-                          <input type="radio" name="gender" id="male" value="male" class=" w-6 h-6"><label for="male" class="text-white mr-4 text-xl ">Male</label>
-                          <input type="radio" name="gender" id="female" value="female" class=" w-6 h-6"><label for="female" class="text-white mr-4 text-xl">Female</label>
-                      </div>
+                  <div class="lg:mb-4 text-xl w-full lg:w-1/2">
+                    <label for="gender" class="text-white lg:mb-2 block">Gender</label>
+                    <select id="gender" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                      <option value="">choose</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                
                   </div>
-                  <div class="mb-4 text-xl">
-                      <label for="age" class="text-white mb-2 block">Age</label>
+                  <div class="flex flex-col lg:flex-row lg:gap-3">
+                    <div class="lg:mb-4 text-xl w-full  lg:w-1/2">
+                      <label for="age" class="text-white lg:mb-2 block">Age</label>
                       <input type="number" placeholder="Enter Your Age" id="age" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
                   </div>
-                  <div class="mb-4 text-xl flex items-center space-x-4">
+                  <div class="lg:mb-4 text-xl w-full lg:w-1/2">
+                    <label for="goal" class="text-white lg:mb-2 block">Goal</label>
+                    <select id="goal" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                        <option value="">Select your Goal</option>
+                        <option value="weight-loss">Weight Loss</option>
+                        <option value="weight-gain">Weight Gain</option>
+                        <option value="customized-diet-plan">Customized Diet Plan</option>
+                        <option value="crossfit">Crossfit</option>
+                        <option value="pcod">Special Training for PCOD</option>
+                        <option value="personal-training">Personal Training</option>
+                        <option value="group-training">Group Training</option>
+                    </select>
+                </div>
+                  </div>
+                  
+                  <div class="lg:mb-4 text-xl  flex items-center space-x-4">
                       <div class="w-1/2">
-                          <label for="height" class="text-white mb-2 block">Height (in cm)</label>
+                          <label for="height" class="text-white lg:mb-2 block">Height (in cm)</label>
                           <input type="number" placeholder="Enter Your Height" id="height" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105" inputmode="numeric">
                       </div>
                       <div class="w-1/2">
-                          <label for="weight" class="text-white mb-2 block">Weight (in kg)</label>
+                          <label for="weight" class="text-white lg:mb-2 block">Weight (in kg)</label>
                           <input type="number" placeholder="Enter Your Weight" id="weight" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105" inputmode="numeric">
                       </div>
                   </div>
-                  <div class="mb-4 text-xl">
-                      <label for="goal" class="text-white mb-2 block">Goal</label>
-                      <select id="goal" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-                          <option value="">Select your Goal</option>
-                          <option value="weight-loss">Weight Loss</option>
-                          <option value="weight-gain">Weight Gain</option>
-                          <option value="customized-diet-plan">Customized Diet Plan</option>
-                          <option value="crossfit">Crossfit</option>
-                          <option value="pcod">Special Training for PCOD</option>
-                          <option value="personal-training">Personal Training</option>
-                          <option value="group-training">Group Training</option>
-                      </select>
-                  </div>
-                  <div class="mb-4 text-xl">
-                      <label for="contact" class="text-white mb-2 block">Contact</label>
-                      <input type="tel" placeholder="Enter Your Number" id="contact" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-                  </div>
-                  <div class="mb-4 text-xl">
-                      <label for="mail" class="text-white mb-2 block">Email-Id</label>
-                      <input type="email" placeholder="Enter Your Mail" id="mail" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-                  </div>
+                 <div class="flex flex-col lg:flex-row lg:gap-3">
+                  <div class="lg:mb-4 text-xl w-full lg:w-1/2">
+                    <label for="contact" class="text-white lg:mb-2 block">Contact</label>
+                    <input type="tel" placeholder="Enter Your Number" id="contact" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                </div>
+                <div class="lg:mb-4 text-xl w-full lg:w-1/2">
+                    <label for="mail" class="text-white lg:mb-2 block">Email-Id</label>
+                    <input type="email" placeholder="Enter Your Mail" id="mail" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                </div>
+                 </div>
+                  
                   <p id="show" class="text-center text-[#FF0000] text-xl"></p>
-                  <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 block mx-auto px-6 py-3 text-white bg-orange-500 hover:bg-orange-600 rounded-full transform hover:scale-105 transition duration-300">Submit</button>
+                  <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 block mx-auto px-20 py-2 text-black bg-white hover:bg-black hover:text-white rounded transform hover:scale-105 transition duration-300">Submit</button>
               </form>
           </div>
       </div>
   </div>
+   </div>
 
   <!-- footer -->
     <hr style="border: 1px solid #FF0000;">

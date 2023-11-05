@@ -9,7 +9,7 @@ bars.addEventListener("click",function(){
 function sendWhatsAppMessage() {
    const name = document.getElementById("name").value;
    const contact = document.getElementById("contact").value; // Get the contact number input value
-   const gender = document.querySelector('input[name="gender"]:checked').value;
+   const gender = document.getElementById('gender').value;
    const height = document.getElementById("height").value;
    const weight = document.getElementById("weight").value;
    const age = document.getElementById("age").value;
@@ -25,7 +25,7 @@ function sendWhatsAppMessage() {
 //to reset
    document.getElementById("name").value = "";
   document.getElementById("contact").value = "";
-  document.querySelector('input[name="gender"]:checked').checked = false;
+  document.getElementById('gender').value="";
   document.getElementById("height").value = "";
   document.getElementById("weight").value = "";
   document.getElementById("age").value = "";
@@ -87,9 +87,11 @@ scrollToTopButton.addEventListener('click', () => {
   });
 });
 //popup
-const choose1MonthBtn = document.getElementById("choose-1month");
-const choose3MonthsBtn = document.getElementById("choose-3months");
-const choose6MonthsBtn = document.getElementById("choose-6months");
-const form = document.getElementById("form");
-const goalSelect = document.getElementById("goal");
 
+const popup = document.getElementById("popup");
+function pop(){
+  popup.classList.add("top-0")
+}
+function closepopup(){
+popup.classList.remove("top-0")
+}

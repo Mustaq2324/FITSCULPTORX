@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 .show{
     transition: all;
     transition-duration: 1000ms;

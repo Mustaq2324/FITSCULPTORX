@@ -431,14 +431,14 @@
 </div>
 
     <!-- form -->
-   <div class="w-[100vw] h-[100vh] bg-opacity-[0.7] z-[99] fixed -top-[150] left-0  bg-gradient-to-t from-black to-transparent bg-black" id="popup">
+   <div class="w-[100vw] overflow-y-scroll h-[100vh] bg-opacity-[0.7] z-[99] fixed -top-[150] left-0  bg-gradient-to-t from-black to-transparent bg-black" id="popup">
     <div class=" bg-[#FF0000] bg-opacity-50 bg-gradient-to-t from-black to-transparent  md:w-[70%] w-full  rounded-lg mx-auto lg:translate-y-[15%]" id="form" >
      
       <div class="flex gap-2 ">
           <div  class="hidden lg:block">
-              <img src="./img/banner.jpg" alt="Banner Image" class="object-contain w-[450px]   shadow-md " />
+              <img src="./img/flyer 4.jpg" alt="Banner Image" class="object-contain w-[500px]   shadow-md " />
           </div>
-          <div  class="pe-2 mx-auto   ">
+          <div  class="pe-2 mx-auto">
            <div class="flex mt-2 lg:mt-0 justify-between items-center">
             <h1 class="font-oswald text-3xl lg:text-4xl font-bold text-white text-center mt-2">ENROLLMENT FORM</h1>
             <div class=" h-[30px] w-[30px] lg:h-[30px] cursor-pointer lg:w-[30px] rounded bg-black flex items-center justify-center  hover:bg-white hover:text-black text-white  " onclick="closepopup()">
@@ -502,6 +502,16 @@
                 </div>
                  </div>
                   
+
+<div class="lg:mb-4 mb-1  text-xl w-full ">
+  <label for="package" class="text-white lg:mb-2 block">Package</label>
+  <select id="package" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+    <option value="">Select Package</option>
+    <option value="1-month">1 Month</option>
+    <option value="3-months">3 Months</option>
+    <option value="6-months">6 Months</option>
+  </select>
+</div>
                   <p id="show" class="text-center text-[#FF0000] text-xl"></p>
                   <button type="button" onclick="sendWhatsAppMessage()" class="mt-2 block mx-auto px-20 py-2 text-black bg-white hover:bg-black hover:text-white rounded transform hover:scale-105 transition duration-300">Submit</button>
               </form>

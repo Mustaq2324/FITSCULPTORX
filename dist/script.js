@@ -1,9 +1,19 @@
 //side-navbar
+
 let bars=document.getElementById("bars")
 let sideNav=document.getElementById("sidenav")
-bars.addEventListener("click",function(){
-   sideNav.classList.toggle("show")
+bars.addEventListener("click", function (event) {
+  event.stopPropagation(); // Prevent the click event from propagating to the window
+  sideNav.classList.toggle("show");
+});
+
+// Add a click event listener to the window to close the sideNav
+window.addEventListener("click", function (event) {
+  if (event.target !== bars) {
+    sideNav.classList.remove("show");
+  }
 })
+
 
 //To Send Whatsapp Messaege
 function sendWhatsAppMessage() {

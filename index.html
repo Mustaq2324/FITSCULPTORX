@@ -484,8 +484,8 @@ Our training sessions are not just about sweating it out; they are about educati
    <div class="w-[100vw] overflow-y-scroll h-[100%] bg-opacity-[0.7] z-[99] fixed -top-[150] left-0  bg-gradient-to-t from-black to-transparent bg-black" id="popup">
     <div class=" bg-[#FF0000] bg-opacity-50 bg-gradient-to-t from-black to-transparent  md:w-[70%] w-full  rounded-lg mx-auto lg:translate-y-[15%]" id="form" >
      
-      <div class="flex gap-4 ">
-          <div  class="hidden lg:block">
+      <div class="flex flex-col lg:flex-row gap-4 ">
+          <div  class=" lg:block">
               <img src="./img/flyer 4.jpg" alt="Banner Image" class="object-contain w-[500px]   shadow-md " />
           </div>
           <div  class="me-4 mx-auto">
@@ -518,16 +518,9 @@ Our training sessions are not just about sweating it out; they are about educati
                   </div>
                   <div class="mb-4  text-xl w-full lg:w-1/2">
                     <label for="goal" class="text-white lg:mb-2 block">Goal</label>
-                    <select id="goal" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
-                        <option value="">Select your Goal</option>
-                        <option value="weight-loss">Weight Loss</option>
-                        <option value="weight-gain">Weight Gain</option>
-                        <option value="customized-diet-plan">Customized Diet Plan</option>
-                        <option value="crossfit">Crossfit</option>
-                        <option value="pcod">Special Training for PCOD</option>
-                        <option value="personal-training">Personal Training</option>
-                        <option value="group-training">Group Training</option>
-                    </select>
+                    <input placeholder="Enter Your Goal" id="goal" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
+                      
+                    </input>
                 </div>
                   </div>
                   
@@ -573,7 +566,7 @@ Our training sessions are not just about sweating it out; they are about educati
   <!-- footer -->
     <hr style="border: 1px solid #FF0000;">
     <footer id="contact" class="mt-8 mb-8">
-      <div class="flex flex-col lg:flex-row lg:justify-evenly lg:relative  gap-8 items-center">
+      <div class="flex flex-col  lg:flex-row lg:justify-evenly lg:relative  gap-8 items-center">
         
           <img src="./img/NASEER LOGO-01.png" class="w-[250px] h-[250px] hidden lg:block lg:absolute lg:-top-20 lg:left-0 object-cover">
         <div>

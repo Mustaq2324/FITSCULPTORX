@@ -19,6 +19,26 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
+  <style>
+    swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+  </style>
   <body class="bg-black  ">
     
     <!-- navbar -->
@@ -104,8 +124,8 @@
         <div>
           <button
             class="p-2 bg-[#FF0000] mt-6 hover:text-[#FF0000] hover:bg-black hover:scale-[1.1] transition-all duration-1000"
-          onclick="pop()">
-            <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
+        >
+            <i class="fa-solid fa-dumbbell"></i><a href="#membership"> Commit To Fit</a>
           </button>
         </div>
       </div>
@@ -138,8 +158,8 @@
           <div>
             <button
               class="p-2 hover:bg-white mt-6 hover:text-[#ff0000] text-white  bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
-              onclick="pop()" >
-              <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
+              >
+              <i class="fa-solid fa-dumbbell"></i><a href="#membership"> Commit To Fit</a>
             </button>
           </div>
         </div>
@@ -159,8 +179,8 @@
           <div>
             <button
               class="p-2 hover:bg-white mt-6 hover:text-[#ff0000] text-white  bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
-              onclick="pop()"     >
-              <i class="fa-solid fa-dumbbell"></i> <a href="#form"> Commit To Fit</a>
+                 >
+              <i class="fa-solid fa-dumbbell"></i> <a href="#membership"> Commit To Fit</a>
             </button>
           </div>
         </div>
@@ -201,9 +221,9 @@
           </p>
           <div>
             <button
-            onclick="pop()"       class="p-2  hover:bg-white mt-6 hover:text-[#ff0000] text-white  bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
+               class="p-2  hover:bg-white mt-6 hover:text-[#ff0000] text-white  bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
             >
-              <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
+              <i class="fa-solid fa-dumbbell"></i><a href="#membership"> Commit To Fit</a>
             </button>
           </div>
         </div>
@@ -232,8 +252,8 @@
           <div>
             <button
               class="p-2 hover:scale-[1.1] transition-all duration-1000 hover:bg-white mt-6 hover:text-[#ff0000] text-white  bg-[#FF0000]"
-              onclick="pop()"       >
-              <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
+                  >
+              <i class="fa-solid fa-dumbbell"></i><a href="#membership"> Commit To Fit</a>
             </button>
           </div>
         </div>
@@ -274,8 +294,8 @@
           <div>
             <button
               class="p-2 hover:bg-white mt-6 hover:text-[#ff0000] text-white  bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
-              onclick="pop()"        >
-              <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
+                   >
+              <i class="fa-solid fa-dumbbell"></i><a href="#membership"> Commit To Fit</a>
             </button>
           </div>
         </div>
@@ -301,9 +321,9 @@
           </p>
           <div>
             <button
-            onclick="pop()"         class="p-2 hover:bg-white mt-6 hover:text-[#ff0000] text-white  bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
+              class="p-2 hover:bg-white mt-6 hover:text-[#ff0000] text-white  bg-[#FF0000] hover:scale-[1.1] transition-all duration-1000"
             >
-              <i class="fa-solid fa-dumbbell"></i><a href="#form"> Commit To Fit</a>
+              <i class="fa-solid fa-dumbbell"></i><a href="#membership"> Commit To Fit</a>
             </button>
           </div>
         </div>
@@ -317,7 +337,27 @@
       </div>
     </div>
     <!-- offer ends -->
-    <!-- meet your trainer -->
+   <!-- swiper -->
+    <swiper-container data-aos="fade-down"   data-aos-duration="800" class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+<swiper-slide>
+  <img src="./img/1.jpg" />
+</swiper-slide>
+<swiper-slide>
+  <img src="./img/2.jpg" />
+</swiper-slide>
+<swiper-slide>
+  <img src="./img/3.jpg" />
+</swiper-slide>
+<swiper-slide>
+  <img src="./img/4.jpg" />
+</swiper-slide>
+<swiper-slide>
+  <img src="./img/5.jpg" />
+</swiper-slide>
+</swiper-container>
+ <!-- meet your trainer -->
     <div id="about" class="grid grid-rows-1 lg:grid-cols-2 place-items-center overflow-hidden mt-10 mx-auto px-4 place-content-center w-full">
       <div data-aos="flip-up"   data-aos-duration="800" class="flex flex-col gap-8">
 
@@ -437,7 +477,12 @@ Our training sessions are not just about sweating it out; they are about educati
 </div>
 </div> 
 
-    form
+
+
+
+
+
+    <!-- form -->
    <div class="w-[100vw] overflow-y-scroll h-[100%] bg-opacity-[0.7] z-[99] fixed -top-[150] left-0  bg-gradient-to-t from-black to-transparent bg-black" id="popup">
     <div class=" bg-[#FF0000] bg-opacity-50 bg-gradient-to-t from-black to-transparent  md:w-[70%] w-full  rounded-lg mx-auto lg:translate-y-[15%]" id="form" >
      
@@ -454,7 +499,7 @@ Our training sessions are not just about sweating it out; they are about educati
            </div>
               <form id="myForm" class="lg:mt-5 p-1 px-4 lg:px-0  ">
                   <div class="flex flex-col lg:flex-row gap-3">
-                    <div class="mb-4 mb-1 text-xl w-full lg:w-1/2">
+                    <div class="mb-4  text-xl w-full lg:w-1/2">
                       <label for="name" class="text-white lg:mb-2 block">Name</label>
                       <input type="text" placeholder="Enter Your Name" id="name" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
                   </div>
@@ -469,11 +514,11 @@ Our training sessions are not just about sweating it out; they are about educati
                 
                   </div>
                   <div class="flex flex-col lg:flex-row gap-3">
-                    <div class="mb-4 mb-1 text-xl w-full  lg:w-1/2">
+                    <div class="mb-4 text-xl w-full  lg:w-1/2">
                       <label for="age" class="text-white lg:mb-2 block">Age</label>
                       <input type="number" placeholder="Enter Your Age" id="age" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
                   </div>
-                  <div class="mb-4 mb-1 text-xl w-full lg:w-1/2">
+                  <div class="mb-4  text-xl w-full lg:w-1/2">
                     <label for="goal" class="text-white lg:mb-2 block">Goal</label>
                     <select id="goal" class="border-gray-400 px-4 py-2 rounded text-gray-800 focus:outline-none focus:border-orange-500 w-full transition duration-300 transform hover:scale-105">
                         <option value="">Select your Goal</option>
@@ -537,14 +582,14 @@ Our training sessions are not just about sweating it out; they are about educati
         >
           FIT <span class="text-[#FF0000]">CRAFTERX</span>
         </h1>
-        <p class="text-white text-xl text-center">Turn Fat Into Fit   <i class="fa-solid fa-dumbbell text-[#FF0000]"></i></p>
+        <p class="text-white text-xl text-center">Commit To Fit <i class="fa-solid fa-dumbbell text-[#FF0000]"></i></p>
         </div>
         <div class="flex flex-col gap-5 items-center">
           <h4 class="text-white font-[oswald] text-2xl">SOCIAL</h4>
           <div class="flex gap-3 text-xl">
-            <i class="fa-brands fa-whatsapp text-[#FF0000] cursor-pointer"></i>
-            <i class="fa-brands fa-facebook text-[#FF0000] cursor-pointer"></i>
-            <i class="fa-brands fa-instagram text-[#FF0000] cursor-pointer"></i>
+          <a href="https://wa.me/message/HJNG7YSQ6UE3N1" target="_blank"><i class="fa-brands fa-whatsapp text-[#FF0000] cursor-pointer"></i></a>  
+          <a href="https://www.facebook.com/profile.php?id=61552855300973&mibextid=aejMdD" target="_blank"><i class="fa-brands fa-facebook text-[#FF0000] cursor-pointer"></i></a>  
+            <a href="https://www.instagram.com/naseer_lee_/?igshid=MWFic2NtZTFmbDN6bw%3D%3D" target="_blank" > <i class="fa-brands fa-instagram text-[#FF0000] cursor-pointer"></i></a>  
           </div>
         </div>
           
@@ -573,5 +618,6 @@ Our training sessions are not just about sweating it out; they are about educati
   </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./dist/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html> 

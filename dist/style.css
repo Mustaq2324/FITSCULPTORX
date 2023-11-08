@@ -679,12 +679,12 @@ video {
   z-index: 95;
 }
 
-.z-\[99\] {
-  z-index: 99;
-}
-
 .z-\[96\] {
   z-index: 96;
+}
+
+.z-\[99\] {
+  z-index: 99;
 }
 
 .float-right {
